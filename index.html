@@ -82,10 +82,6 @@ header{ display: flex; height 60px; width:100%;}
 </style>
 </head>
 <body>
-  <section class="section01">
-<img style="border: 0px solid; display: inline;" alt="contador de visitas" src="https://websmultimedia.com/contador-de-visitas.php?id=7437">
-</section>
-  
   
 <div class="container">
 <section id="section1"><img src="11.png" width="110"  height="110">
@@ -107,12 +103,15 @@ header{ display: flex; height 60px; width:100%;}
 <a href="Play H.apk" download="Play H_developer-shop" ><center>Descargar</center></a>
 </div>
   
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v15.0" nonce="K1wuZnfm"></script>  
+  
 <section id="section03">
 <div id="section08">
 </div>
-<div id="section04"><b>Calificación:</b><br>3.9<img src="19.png">
+<div id="section04"><div class="rw-ui-container"></div>
 </div>
-<div id="section05"><a href="comentarios.html" ><center>Comentarios</center></a> 
+<div id="section05"><a href="#comentarios" ><center>Comentarios</center></a> 
 </div>
   
 </section>
@@ -174,6 +173,48 @@ versión 1.3(2)
 tamaño 15.03MB
 </p></pre></div>
 </header> 
+
+<div id="comentarios"></div>
+<div class="fb-comments" data-href="https://developer-shop.github.io/Play-HH/" data-width="100%" data-numposts="5"></div>
+
+<script type="text/javascript">(function(d, t, e, m){
+    
+    // Async Rating-Widget initialization.
+    window.RW_Async_Init = function(){
+                
+        RW.init({
+            huid: "489636",
+            uid: "5b4004c165e23233b1355674625abdce",
+            source: "website",
+            options: {
+                "advanced": {
+                    "font": {
+                        "size": "14px"
+                    },
+                    "text": {
+                        "rateAwful": "No gusta"
+                    }
+                },
+                "size": "medium",
+                "lng": "es",
+                "style": "oxygen",
+                "isDummy": false
+            } 
+        });
+        RW.render();
+    };
+        // Append Rating-Widget JavaScript library.
+    var rw, s = d.getElementsByTagName(e)[0], id = "rw-js",
+        l = d.location, ck = "Y" + t.getFullYear() + 
+        "M" + t.getMonth() + "D" + t.getDate(), p = l.protocol,
+        f = ((l.search.indexOf("DBG=") > -1) ? "" : ".min"),
+        a = ("https:" == p ? "secure." + m + "js/" : "js." + m);
+    if (d.getElementById(id)) return;              
+    rw = d.createElement(e);
+    rw.id = id; rw.async = true; rw.type = "text/javascript";
+    rw.src = p + "//" + a + "external" + f + ".js?ck=" + ck;
+    s.parentNode.insertBefore(rw, s);
+    }(document, new Date(), "script", "rating-widget.com/"));</script>
 
 
 </body>
